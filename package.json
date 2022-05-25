@@ -1,0 +1,26 @@
+{
+  "name": "mcgiverdev.github.io",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/mcgiverdev/mcgiverdev.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.52.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcgiverdev/mcgiverdev.github.io.git"
+  },
+  "author": "Bryan Mc Giver Avila Portocarrero <xmcgiver12@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mcgiverdev/mcgiverdev.github.io/issues"
+  },
+  "homepage": "https://github.com/mcgiverdev/mcgiverdev.github.io#readme"
+}
