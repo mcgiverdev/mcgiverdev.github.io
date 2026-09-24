@@ -1,533 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mc Giver - FULLSTACK DEVELOPER </title>
-    <!-- ===== CSS Files ====== -->
-    <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- ===== Style Switcher ====== -->
-    <link rel="stylesheet" href="public/css/skins/color-1.css" class="alternate-style" title="color-1">
-    <link rel="stylesheet" href="public/css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="public/css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
-    <link rel="stylesheet" href="public/css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
-    <link rel="stylesheet" href="public/css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
-     <link rel="stylesheet" href="public/css/style-switcher.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bryan Mc Giver — Full-stack developer</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230B0E13'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%235EEAD4'%3EBM%3C/text%3E%3C/svg%3E">
+<meta name="description" content="Bryan Mc Giver Avila — desarrollador full-stack con 5+ años construyendo sistemas de negocio: banca, retail y gestión a medida.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<script>
+try {
+  var t = localStorage.getItem("theme");
+  if (t !== "light" && t !== "dark") {
+    t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  }
+  document.documentElement.setAttribute("data-theme", t);
+} catch (e) {
+  document.documentElement.setAttribute("data-theme", "dark");
+}
+</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
 </head>
 <body>
-    <!-- ===== Main Container Start ====== -->
-    <div class="main-container">
-        <!-- ===== Aside Star ===== -->
-        <div class="aside">
-            <div class="logo">
-                <a href="#"><span>M</span>cGiver</a>
-            </div>
-            <div class="nav-toggler">
-                <span></span>
-            </div>
-            <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i>Inicio</a></li>
-                <li><a href="#about"><i class="fa fa-user"></i>Acerca de mi</a></li>
-                <li><a href="#services"><i class="fa fa-list"></i>Servicios</a></li>
-                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portafolio</a></li>
-                <li><a href="#contact"><i class="fa fa-comments"></i>Conctactos</a></li>
-            </ul>
-        </div>
-        <!-- ===== Aside End ===== -->
-        <!-- ===== Main content Star ===== -->
-        <div class="main-content">            
-            <!-- ===== Home Section Star ===== -->
-            <section class="home active section" id="home">
-                <div class="container">
-                    <div class="row">
-                        <div class="home-info padd-15">
-                            <h3 class="hello">
-                                Hola, mi nombre es <span class="name">Mc Giver</span>
-                            </h3>
-                            <h3 class="my-profession">Soy <span class="typing">Diseñador Web</span></h3>
-                            <p>
-                                Soy un Desarrollador Full Stack con una amplia experiencia de más de 5 años. Mi especialidad es crear y diseñar sitios web, desarrollo de aplicaciones web y muchos más...
-                            </p>
-                            <a target="_blank" href="public/files/CV-2022.pdf" class="btn">Descargar CV</a>
-                        </div>
-                        <div class="home-img padd-15">
-                            <img src="public/images/avatar.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </section>
-        <!-- ===== Home Section End ===== -->
-        <!-- ===== About Section Start ===== -->
-            <section class="about section" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Acerca de mi</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3>Soy Mc Giver <span>Desarrollador Full Stack</span></h3>
-                                    <p>
-                                        Bachiller en Ingeniería de Sistemas de la Facultad de Ingeniería de Sistemas e Ingeniería Civil de la 
-                                        Universidad Nacional de Ucayali, con valores y principios bien definidos; equilibrio emocional y sólida formación profesional, 
-                                        con firmeza en la toma de decisiones respetando el Principio de Legalidad y el Debido Procedimiento, 
-                                        capacidad para enfrentar situaciones adversas, compromiso e identificación con los objetivos de la Institución, 
-                                        alto grado de responsabilidad y cumplimiento en las funciones encomendadas.
-                                        FULLSTACK DEVELOPER especializado en el FrontEnd con tres años de experiencia en desarrollo de software.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>Cumpleaños: <span>05 sep 1995</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Edad: <span>26</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Sitio web: <span>https://mcgiverdev.github.io/</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Correo electrónico: <span>mcgiverdev@gmail.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Grado: <span>Bachiller</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Celular: <span>+51 920 210 374</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Ciudad: <span>Pucallpa</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>Freelance: <span>Disponible</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <h5>JS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 86%"></div>
-                                                <div class="skill-percent">86%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>PHP</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 66%"></div>
-                                                <div class="skill-percent">66%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>HTML</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 96%"></div>
-                                                <div class="skill-percent">96%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>VUE JS</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 70%"></div>
-                                                <div class="skill-percent">80%</div>
-                                            </div>
-                                        </div>
-                                        <div class="skill-item padd-15">
-                                            <h5>ANGULAR</h5>
-                                            <div class="progress">
-                                                <div class="progress-in" style="width: 70%"></div>
-                                                <div class="skill-percent">65%</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="education padd-15">
-                                    <h3 class="title">Educación</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2022
-                                                    </h3>
-                                                    <h4 class="timeline-title">Frontend Developer - Platzi</h4>
-                                                    <div class="timeline-text">
-                                                        Durante el curso se toco las bases de HTML y CSS. La anatomía de un documento HTML, sus elementos y las propiedades de CSS.
-                                                        Se Maqueto las pantallas principales de una página web con responsive design. 
-                                                        <a target="_blank" href="https://platzi.com/p/mcgiver2018/curso/2467-frontend-developer/diploma/detalle/?fbclid=IwAR1UOu5UM_X01oYsCq4P6xdEHkKlw2Gjpyu4z_PN79s6kzOeDnBrR28EXD0">Ver diploma</a>
-                                                    </div>
-                                                </div>
-                                                <!-- ===== timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2022
-                                                    </h3>
-                                                    <h4 class="timeline-title">Consumo de APIS REST con Angular - Platzi</h4>
-                                                    <div class="timeline-text">
-                                                        Trato sobre las principales solicitudes HTTP basic en Angular.
-                                                        Aprendiendo las buenas prácticas para el manejo de ambientes y errores.
-                                                        Implementación de la autenticación de usarios.
-                                                        <a target="_blank" href="https://platzi.com/p/mcgiver2018/curso/2495-angular-apis/diploma/detalle/">Ver diploma</a>
-                                                    </div>
-                                                </div>
-                                                <!-- ===== timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2022
-                                                    </h3>
-                                                    <h4 class="timeline-title">Curso Profesional de Git y GitHub - Platzi</h4>
-                                                    <div class="timeline-text">
-                                                       El curso se desarrollo el tema del sistema de control de versiones por excelencia que se utiliza en la industria tecnológica. 
-                                                       Se inicio un repositorio local, se creo ramas para realizar ejemplos de como se realizaria en un equipo de trabajo
-                                                       gestionando mejor los proyectos, posteriormente se subio a GitHub.
-                                                       <a target="_blank" href="https://platzi.com/p/mcgiver2018/curso/1557-git-github/diploma/detalle/">Ver diploma</a>
-                                                    </div>
-                                                </div>                                                
-                                                <!-- ===== timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2013 - 2019
-                                                    </h3>
-                                                    <h4 class="timeline-title">Ingeniería de Sistemas</h4>
-                                                    <div class="timeline-text">
-                                                        Durante toda la carrera, eh conocido aspectos básicos de la programación, como 
-                                                        el orientado a objetos. El primer lenguaje que aprendi fue C#, posterior JAVA SE y EE
-                                                        En la parte final de la carrera PHP.
-                                                    </div>
-                                                </div>
-                                                <!-- ===== timeline item ===== -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="experience padd-15">
-                                    <h3 class="title">Experiencia</h3>                                
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!-- ===== timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2022
-                                                    </h3>
-                                                    <h4 class="timeline-title">Desarrollo de aplicación web para el control de inventario para Restaurante</h4>
-                                                    <div class="timeline-text">
-                                                        El cliente queria un sistema web que le permita controlar el stock de los insumos que utiliza en la preparación de 
-                                                        platos para su Restaurante. Para ello se desarrollo un sistema web usando el lenguaje de programación PHP en el backend y 
-                                                        Vue Js en el lado del cliente. que contiene el modulo de compras, ventas, transformación de productos
-                                                        a insumos, producción de platos. Todo ello conectado para asi poder controlar el stock por medio de Kardex de los productos.
-                                                    </div>
-                                                </div>
-                                                <!-- ===== timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2021
-                                                    </h3>
-                                                    <h4 class="timeline-title">Desarrollo de aplicación web para el control de pagos</h4>
-                                                    <div class="timeline-text">
-                                                        El cliente solicito un sistema web que le permita realizar el control de caja, de balance de y comprobantes con deudas. Para ello
-                                                        se desarrollo un sistema web usando el lenguaje de programación PHP en el backend y Vue Js en el lado del cliente.
-                                                        Que contiene el modulo de caja, de comprobantes, usuarios, ingreso de dinero, gastos y reportes.
-                                                    </div>
-                                                </div>
-                                                <!-- ===== timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2021
-                                                    </h3>
-                                                    <h4 class="timeline-title">Desarrollo de aplicación android para el control de metas de ventas</h4>
-                                                    <div class="timeline-text">
-                                                        El cliente solicito una aplicación móvil que no necesite conexión a internet y que pueda guardar de forma local las metas de
-                                                        ventas de sus vendedores. Para ello se desarrollo un aplicativo hibrida usando framework IONIC con Vue JS para el desarrollo en android.
-                                                    </div>
-                                                </div>
-                                                <!-- ===== timeline item ===== -->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i>2021
-                                                    </h3>
-                                                    <h4 class="timeline-title">Desarrollo de aplicativo web y móvil para el monitoreo de cacao de alto putumayo</h4>
-                                                    <div class="timeline-text">
-                                                        El cliente solicito un sistema para la recopilación de información en lugares donde la conexión a internet es nula. Para ello se desarollo una aplicación web y movil, 
-                                                        el primero permite la creación de datos básicos que serviran para la aplicación móvil, una vez descargada esa información se podra usar de forma offline. Una vez
-                                                        recopilada la información se podra enviar al aplicativo web toda la información para su posterior procesamiento.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- ===== About Section End ===== -->
-            <!-- ===== Service Section Start ===== -->
-            <section class="service section" id="services">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Servicios</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- =========Service Item Start====== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-code"></i>
-                                </div>
-                                <h4>Desarrollo de aplicaciones web</h4>                                
-                                <p>Usando tecnologías modernas y eficiente se logra realizar aplicaciones web que le traerá alto valor dentro de su negocio.</p>
-                            </div>
-                        </div>
-                        <!-- =========Service Item End====== -->
-                        <!-- =========Service Item Start====== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-mobile-alt"></i>
-                                </div>
-                                <h4>Desarrollo de aplicaciones móviles</h4>
-                                <p>Usando tecnologías modernas y eficiente se logra realizar aplicaciones móviles que le traerá alto valor dentro de su negocio.</p>
-                            </div>
-                        </div>
-                        <!-- =========Service Item End====== -->
-                        <!-- =========Service Item Start====== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-server"></i>
-                                </div>
-                                <h4>Administración de servidores Linux</h4>                                
-                                <p>Se realiza configuración y administración de servidores para implementar sistemas web. Usando Docker o dependiente los requerimientos del cliente.</p>
-                            </div>
-                        </div>
-                        <!-- =========Service Item End====== -->
-                        <!-- =========Service Item Start====== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-laptop-code"></i>
-                                </div>
-                                <h4>Diseño web</h4>                                
-                                <p>Creación  y mantenimiento de sitios web para empresas, configuración de correos corporativos acorde al dominio registrado. </p>
-                            </div>
-                        </div>
-                        <!-- =========Service Item End====== -->
-                        <!-- =========Service Item Start====== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-search"></i>
-                                </div>
-                                <h4>Posicionamiento SEO</h4>                                
-                                <p>Posicionamiento en los buscadores de acuerdo a una palabra clave.</p>
-                            </div>
-                        </div>
-                        <!-- =========Service Item End====== -->
-                        <!-- =========Service Item Start====== -->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon">
-                                    <i class="fa fa-bullhorn"></i>
-                                </div>
-                                <h4>Marketing Digital</h4>                                
-                                <p>Campañas digitales por medio de facebook ads.</p>
-                            </div>
-                        </div>
-                        <!-- =========Service Item End====== -->
-                    </div>
-                </div>
-            </section>
-        <!-- ===== Service Section End ===== -->
-        <!-- ======= Portfolio Section Start ====== -->
-        <section class="portfolio section" id="portfolio">
-            <div class="container">                
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Portfolio</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="portfolio-heading padd-15">
-                        <h2>Mis ultimos proyectos: </h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- ========= portfolio item start ===== -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="public/images/portfolio/asesecogreen.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ========= portfolio item end ===== -->
-                    <!-- ========= portfolio item start ===== -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="public/images/portfolio/sispay.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ========= portfolio item end ===== -->
-                    <!-- ========= portfolio item start ===== -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="public/images/portfolio/restaurantesupplymanagement.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ========= portfolio item end ===== -->
-                    <!-- ========= portfolio item start ===== -->
-                    <div class="portfolio-item padd-15">
-                        <div class="portfolio-item-inner shadow-dark">
-                            <div class="portfolio-img">
-                                <img src="public/images/portfolio/sysmocap.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ========= portfolio item end ===== -->
-                </div>
-            </div>
-        </section>
-        <!-- ======= Portfolio Section End ====== -->
-        <!-- ======= Contact Section Start ====== -->
-        <section class="contact section" id="contact">            
-            <div class="container">                
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Contáctame</h2>
-                    </div>
-                </div>
-                <h3 class="contact-title padd-15">¿Tienes alguna pregunta?</h3>
-                <h4 class="contact-sub-title padd-15">ESTOY A SUS SERVICIOS</h4>
-                <div class="row">
-                    <!-- ====== Conctact info item start =======-->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-phone"></i></div>
-                        <h4>Llámenos al</h4>
-                        <p>+51 920210374</p>
-                    </div>
-                    <!-- ====== Conctact info item end =======-->
-                    <!-- ====== Conctact info item start =======-->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                        <h4>Oficina</h4>
-                        <p>Pucallpa</p>
-                    </div>
-                    <!-- ====== Conctact info item end =======-->
-                    <!-- ====== Conctact info item start =======-->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-envelope"></i></div>
-                        <h4>Email</h4>
-                        <p>mcgiverdev@gmail.com</p>
-                    </div>
-                    <!-- ====== Conctact info item end =======-->
-                    <!-- ====== Conctact info item start =======-->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                        <h4>Website</h4>
-                        <p>https://mcgiverdev.github.io/</p>
-                    </div>
-                    <!-- ====== Conctact info item end =======-->
-                </div>
-                
-                <h3 class="contact-title padd-15">ENVÍAME UN CORREO ELECTRÓNICO</h3>
-                <h4 class="contact-sub-title padd-15">SOY MUY RECEPTIVO A LOS MENSAJES</h4>
-                <!-- ===== Contact Form====== -->
-                <div class="row">
-                    <div class="contact-form padd-15">
-                        <div class="row">
-                            <div class="form-item col-6 padd-15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nombre">
-                                </div>
-                            </div>
-                            <div class="form-item col-6 padd-15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Correo Electrónico">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Tema">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <div class="form-group">
-                                    <textarea name="" class="form-control" placeholder="Mensaje"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd-15">
-                                <button type="submit" class="btn">Enviar mensaje</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <!-- ======= Contact Section End ====== -->
-        </div>
-        <!-- ===== Main content End ===== -->
+
+<header class="site" id="top">
+  <div class="wrap bar">
+    <span class="bar-path"><span class="t">●</span> ~/bryan — cv.html</span>
+    <nav class="main" id="nav" aria-label="Navegación principal">
+      <a href="#perfil">#perfil</a>
+      <a href="#experiencia">#experiencia</a>
+      <a href="#stack">#stack</a>
+      <a href="#formacion">#formacion</a>
+      <a href="#contacto">#contacto</a>
+    </nav>
+    <div class="bar-right">
+      <button class="tswitch" id="theme-toggle" type="button" aria-label="Cambiar tema claro u oscuro">
+        <span class="on-dark">dark</span>
+        <span class="on-light">light</span>
+      </button>
+      <span class="menu-btn" id="menu-btn" role="button" tabindex="0" aria-expanded="false" aria-controls="nav">[ menu ]</span>
+      <span class="status"><span class="dot">●</span> Pucallpa, Perú</span>
     </div>
-    <!-- ===== Main Container End ====== -->
-    <!-- ===== Style Switcher Start ====  -->
-    <div class="style-switcher">
-        <div class="style-switcher-toggler s-icon">
-            <i class="fas fa-cog fa-spin"></i>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1. HERO -->
+  <section class="hero" id="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-kicker"><span class="prompt">$</span> grep -r "full-stack" <span class="gt">~/trayectoria</span></p>
+        <h1 class="name">Bryan Mc&nbsp;Giver<span class="cursor" aria-hidden="true"></span></h1>
+        <p class="hero-lede"><strong>Desarrollador full-stack</strong> con 5+ años construyendo sistemas de negocio — banca, retail, gastronomía. Trabajo en equipos donde el software tiene que sostener <strong>datos reales</strong>: backend, frontend, móvil e infraestructura.</p>
+        <div class="cta-row">
+          <a class="cta" href="#contacto">$ ./contacto.sh</a>
+          <span class="cta-note"># CV completo y referencias, por LinkedIn o email</span>
         </div>
-        <div class="day-night s-icon">
-            <i class="fas fa-moon"></i>
+      </div>
+      <div class="window" aria-label="Terminal de presentación">
+        <div class="titlebar">
+          <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="fname">bash — bryan — 80×24</span>
+          <span class="fmeta">utf-8</span>
         </div>
-        <h4>Theme Colors</h4>
-        <div class="colors">
-            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-        </div>
+        <div class="term-body" id="hero-out" aria-live="polite"></div>
+      </div>
     </div>
-    <!-- ===== Style Switcher End ====  -->
-    <!-- ===== JS Files ====== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
-    <script src="public/js/script.js"></script>
-    <script src="public/js/style-switcher.js"></script>
+  </section>
+
+  <!-- 2. PERFIL -->
+  <section id="perfil">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="prompt">$</span><h2>cat <span class="flag">perfil.md</span></h2>
+      </div>
+      <div class="window reveal">
+        <div class="titlebar">
+          <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="fname">perfil.md</span>
+          <span class="fmeta">markdown · 2 párrafos</span>
+        </div>
+        <div class="term-body" style="min-height:0; white-space:normal;">
+          <div class="prose">
+            <p><span class="md-h"># Qué hago y cómo trabajo</span></p>
+            <p>Full-stack de punta a punta: <span class="hl">Spring Boot y Laravel</span> en backend, <span class="hl">Vue 3 y Nuxt 3</span> en frontend, <span class="hl">Android en Kotlin</span>, y la infraestructura detrás — Docker, GitLab CI/CD, DigitalOcean. Bachiller en Ingeniería de Sistemas (UNU). Hoy desarrollo para un proyecto de <span class="hl">banca top-3 en Perú</span> vía consultora; antes construí <span class="hl">sistemas de gestión a medida</span> para empresas — control de stock, pagos, reportes y apps móviles offline.</p>
+            <p class="dim">En el equipo sumo tres cosas: <span class="hl">velocidad con criterio</span> — integro agentes de IA al flujo de desarrollo (arquitectura, tests, E2E) sin bajar el estándar de revisión humana; <span class="hl">ownership de feature completa</span>, de la migración de base de datos al deploy; y <span class="hl">costumbre de trabajar con reglas de negocio serias</span> — dinero, impuestos, estados, auditoría. <span class="cm">// código que otro puede mantener el lunes.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="window reveal">
+        <div class="titlebar">
+          <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="fname">neofetch</span>
+          <span class="fmeta">bryan@peru</span>
+        </div>
+        <div class="fetch">
+          <pre class="fetch-logo" aria-hidden="true">████  █   █
+█   █ ██ ██
+████  █ █ █
+█   █ █   █
+████  █   █</pre>
+          <div class="fetch-info">
+            <div><span class="fk">bryan@peru</span></div>
+            <div class="fsep">─────────────</div>
+            <div><span class="fk">OS</span> Pucallpa, Perú · GMT-5</div>
+            <div><span class="fk">Uptime</span> 5+ años en producción</div>
+            <div><span class="fk">Backend</span> Spring Boot · Laravel · NestJS</div>
+            <div><span class="fk">Frontend</span> Vue 3 · Nuxt 3 · TypeScript</div>
+            <div><span class="fk">Mobile</span> Android · Kotlin · Compose</div>
+            <div><span class="fk">Deploy</span> Docker · GitLab CI · DigitalOcean</div>
+            <div><span class="fk">Hoy</span> <span class="fa">banca top-3 Perú · vía consultora</span></div>
+            <div><span class="fk">Sectores</span> banca · retail · gastronomía</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. EXPERIENCIA -->
+  <section id="experiencia">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="prompt">$</span><h2>ls <span class="flag">-la experiencia/</span></h2>
+      </div>
+      <div class="window reveal">
+        <div class="titlebar">
+          <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="fname">experiencia/</span>
+          <span class="fmeta">4 entradas</span>
+        </div>
+        <div class="ls">
+          <span class="total">total 4</span>
+          <div class="ls-row"><span class="perm">-rw-r--r--</span><span class="dname">consultoria-bancaria/</span><span class="ddesc">actual · full-stack en proyecto para banca top-3 Perú (vía consultora) — Java/Spring Boot, MySQL, Vue 3</span></div>
+          <div class="ls-row"><span class="perm">-rw-r--r--</span><span class="dname">papacholo/</span><span class="ddesc">dic 2021–feb 2022 · sistema web de control de stock de insumos para restaurante — Vue 2, Laravel, MySQL, VPS Ubuntu</span></div>
+          <div class="ls-row"><span class="perm">-rw-r--r--</span><span class="dname">saymer/</span><span class="ddesc">oct–dic 2021 · control de pagos + reportes, y app móvil offline de metas de ventas — Laravel, Docker, Cordova/Angular</span></div>
+          <div class="ls-row"><span class="perm">-rw-r--r--</span><span class="dname">sysmocap/</span><span class="ddesc">2021 · monitoreo de cacao de alto Putumayo — aplicativo web y móvil</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. STACK -->
+  <section id="stack">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="prompt">$</span><h2>stack <span class="flag">--json</span></h2>
+      </div>
+      <div class="window reveal">
+        <div class="titlebar">
+          <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="fname">stack.json</span>
+          <span class="fmeta">valid json</span>
+        </div>
+<pre class="code"><code><span class="p">{</span>
+  <span class="k">"meta"</span><span class="p">:</span> <span class="p">{</span> <span class="k">"schema"</span><span class="p">:</span> <span class="n">1</span><span class="p">,</span> <span class="k">"based_in"</span><span class="p">:</span> <span class="s">"Pucallpa, Perú (GMT-5)"</span><span class="p">,</span>
+            <span class="k">"modalidad"</span><span class="p">:</span> <span class="s">"remoto · híbrido · presencial"</span> <span class="p">},</span>
+  <span class="k">"languages"</span><span class="p">:</span> <span class="p">[</span> <span class="s">"Java"</span><span class="p">,</span> <span class="s">"PHP"</span><span class="p">,</span> <span class="s">"TypeScript"</span><span class="p">,</span> <span class="s">"Kotlin"</span> <span class="p">],</span>
+  <span class="k">"backend"</span><span class="p">:</span>  <span class="p">[</span> <span class="s">"Spring Boot"</span><span class="p">,</span> <span class="s">"Laravel"</span><span class="p">,</span> <span class="s">"NestJS"</span> <span class="p">],</span>
+  <span class="k">"frontend"</span><span class="p">:</span> <span class="p">[</span> <span class="s">"Vue 3"</span><span class="p">,</span> <span class="s">"Nuxt 3"</span><span class="p">,</span> <span class="s">"Tailwind CSS"</span> <span class="p">],</span>
+  <span class="k">"mobile"</span><span class="p">:</span>   <span class="p">[</span> <span class="s">"Android"</span><span class="p">,</span> <span class="s">"Jetpack Compose"</span> <span class="p">],</span>
+  <span class="k">"data"</span><span class="p">:</span>     <span class="p">[</span> <span class="s">"MySQL"</span><span class="p">,</span> <span class="s">"Redis"</span> <span class="p">],</span>
+  <span class="k">"infra"</span><span class="p">:</span>    <span class="p">[</span> <span class="s">"Docker"</span><span class="p">,</span> <span class="s">"GitLab CI/CD"</span><span class="p">,</span> <span class="s">"DigitalOcean"</span><span class="p">,</span>
+              <span class="s">"Linux"</span><span class="p">,</span> <span class="s">"Traefik"</span> <span class="p">],</span>
+  <span class="k">"ai_workflow"</span><span class="p">:</span> <span class="p">[</span> <span class="s">"agentes IA en desarrollo (Claude Code)"</span><span class="p">,</span>
+                   <span class="s">"prompt engineering aplicado a producción"</span> <span class="p">]</span>
+<span class="p">}</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. FORMACIÓN -->
+  <section id="formacion">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="prompt">$</span><h2>cat <span class="flag">formacion.txt</span></h2>
+      </div>
+      <div class="window reveal">
+        <div class="titlebar">
+          <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="fname">formacion.txt</span>
+          <span class="fmeta">UTF-8</span>
+        </div>
+        <div class="edu">
+          <div class="degree"><span class="t">Bachiller en Ingeniería de Sistemas</span> — Universidad Nacional de Ucayali <span class="y">(2014–2019 · grado otorgado 05/2019)</span></div>
+          <div class="certs"><span class="cm">13 certificaciones (Platzi, 2020–2022):</span> <b>Frontend Developer</b> · <b>Laravel Avanzado</b> · <b>PHP con Laravel</b> · <b>Introducción a Java SE</b> · <b>Curso Profesional de Git y GitHub</b> · <b>API REST con PHP</b> · <b>Fundamentos de Angular</b> · <span class="cm">y 6 más — lista completa en LinkedIn</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CONTACTO -->
+  <section id="contacto">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="prompt">$</span><h2>mailto <span class="flag">--compose</span></h2>
+      </div>
+      <div class="window reveal">
+        <div class="titlebar">
+          <span class="lights" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="fname">nuevo-mensaje</span>
+          <span class="fmeta">draft</span>
+        </div>
+        <div class="contact-body">
+          <div><span class="lbl">To:</span><span class="val"><a href="mailto:mcgiverdev@gmail.com">mcgiverdev@gmail.com</a></span></div>
+          <div><span class="lbl">Also:</span><span class="val"><a href="https://www.linkedin.com/in/bmcgiveravilap/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/mcgiverdev" target="_blank" rel="noopener">GitHub</a> · <a href="https://wa.me/51920210374" target="_blank" rel="noopener">WhatsApp</a></span></div>
+          <div class="contact-meta">Pucallpa, Perú (GMT-5) · remoto o híbrido · respondo en menos de 24h</div>
+          <a class="cta" href="mailto:mcgiverdev@gmail.com?subject=Contacto%20desde%20tu%20web">Enviar mensaje</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap foot">
+    <span>Bryan Mc Giver Avila © 2026 · CV interactivo — datos verificados en LinkedIn</span>
+    <span class="exit">process exited with code 0</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
