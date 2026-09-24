@@ -69,10 +69,11 @@
     { kind: "strong", text: "bryan — full-stack developer" },
     { kind: "out",  text: "5+ años · sistemas de negocio en producción · Perú" },
     { kind: "cmd",  text: "cat enfoque.txt" },
-    { kind: "out",  text: "> backend  · Spring Boot (Java) · Laravel (PHP)" },
+    { kind: "out",  text: "> backend  · Spring Boot (Java) · Laravel (PHP) · NestJS" },
     { kind: "out",  text: "> frontend · Vue 3 · Nuxt 3 · TypeScript" },
     { kind: "out",  text: "> mobile   · Android (Kotlin, Jetpack Compose)" },
-    { kind: "out",  text: "> infra    · Docker · GitLab CI/CD · DigitalOcean" },
+    { kind: "out",  text: "> data     · MySQL · Redis" },
+    { kind: "out",  text: "> infra    · Docker · GitLab CI/CD · DigitalOcean · Linux · Traefik" },
     { kind: "cmd",  text: "grep -h sector /cv/experiencia" },
     { kind: "out",  text: "> banca · retail · gastronomía — 5+ años, Perú" }
   ];

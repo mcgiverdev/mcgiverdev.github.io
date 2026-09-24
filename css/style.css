@@ -5,7 +5,7 @@
     --line: #1D2633;
     --line-soft: #161E29;
     --text: #C9D4E3;
-    --dim: #6B7A90;
+    --dim: #7E8FA6;
     --dim-text: #8493A8;
     --accent: #5EEAD4;
     --amber: #FFB454;
@@ -24,7 +24,7 @@
     --line: #DDD8CC;
     --line-soft: #E8E4DA;
     --text: #1C2430;
-    --dim: #6B7A90;
+    --dim: #5F6E85;
     --dim-text: #55637A;
     --accent: #0E7A63;
     --amber: #9A5B00;
@@ -75,6 +75,12 @@
 
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
+
+  a:focus-visible, button:focus-visible, .menu-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
 
   .wrap {
     max-width: 980px;
@@ -389,20 +395,67 @@
     .ls-row .ddesc { padding-left: 0; }
   }
 
-  /* ---------- stack (JSON) ---------- */
-  .code {
-    padding: 20px 22px;
-    font-size: clamp(0.76rem, 1.8vw, 0.88rem);
-    line-height: 1.85;
-    overflow-x: auto;
-    white-space: pre;
-    tab-size: 2;
+  /* ---------- stack (tree + cards) ---------- */
+  .stack-groups { padding: 16px 20px 22px; display: grid; gap: 20px; }
+  .stack-meta { font-size: 0.78rem; }
+  .stack-meta .cm { color: var(--dim); }
+  .stack-group .ghead {
+    display: flex; align-items: baseline; gap: 14px;
+    font-size: 0.78rem; margin-bottom: 10px;
   }
-  .code .k { color: var(--amber); }
-  .code .s { color: var(--accent); }
-  .code .n { color: var(--magenta); }
-  .code .p { color: var(--dim); }
-  .code .cm { color: var(--dim); font-style: italic; }
+  .stack-group .ghead .perm { color: var(--dim); }
+  .stack-group .gname { color: var(--accent); font-weight: 700; }
+  .stack-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  .skill {
+    display: flex; align-items: center; gap: 10px;
+    border: 1px solid var(--line); border-radius: 8px;
+    background: var(--panel-2);
+    padding: 10px 12px;
+    font-size: 0.8rem; color: var(--text);
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
+  }
+  .skill:hover { border-color: var(--brand, var(--accent)); box-shadow: 0 0 0 1px var(--brand, var(--accent)); }
+  .skill .ic {
+    width: 20px; height: 20px; flex: none;
+    background: var(--dim-text);
+    -webkit-mask: var(--icon) no-repeat center / contain;
+    mask: var(--icon) no-repeat center / contain;
+    transition: background 0.18s ease;
+  }
+  .skill:hover .ic { background: var(--brand, var(--accent)); }
+  .skill .sigil {
+    width: 20px; text-align: center; flex: none;
+    color: var(--accent); font-weight: 700;
+  }
+  .ic-openjdk   { --icon: url("../icons/openjdk.svg"); }
+  .ic-php       { --icon: url("../icons/php.svg"); }
+  .ic-typescript{ --icon: url("../icons/typescript.svg"); }
+  .ic-kotlin    { --icon: url("../icons/kotlin.svg"); }
+  .ic-springboot{ --icon: url("../icons/springboot.svg"); }
+  .ic-laravel   { --icon: url("../icons/laravel.svg"); }
+  .ic-nestjs    { --icon: url("../icons/nestjs.svg"); }
+  .ic-vue       { --icon: url("../icons/vuedotjs.svg"); }
+  .ic-nuxt      { --icon: url("../icons/nuxt.svg"); }
+  .ic-tailwind  { --icon: url("../icons/tailwindcss.svg"); }
+  .ic-android   { --icon: url("../icons/android.svg"); }
+  .ic-compose   { --icon: url("../icons/jetpackcompose.svg"); }
+  .ic-mysql     { --icon: url("../icons/mysql.svg"); }
+  .ic-redis     { --icon: url("../icons/redis.svg"); }
+  .ic-docker    { --icon: url("../icons/docker.svg"); }
+  .ic-gitlab    { --icon: url("../icons/gitlab.svg"); }
+  .ic-do        { --icon: url("../icons/digitalocean.svg"); }
+  .ic-linux     { --icon: url("../icons/linux.svg"); }
+  .ic-traefik   { --icon: url("../icons/traefikproxy.svg"); }
+  .ic-claude    { --icon: url("../icons/claude.svg"); }
+  @media (max-width: 480px) {
+    .stack-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .skill { font-size: 0.72rem; padding: 9px 10px; }
+    .skill .ic { width: 18px; height: 18px; }
+  }
 
   /* ---------- formación ---------- */
   .edu {
